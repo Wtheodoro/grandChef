@@ -9,6 +9,7 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     display: flex;
+    justify-content: center;
 `
 
 export const LeftSide = styled.div`
@@ -25,5 +26,11 @@ export const CardsContainer = styled.div`
 export const RightSide = styled.div`
     height: 100%;
     width: 35%;
+    margin: 3rem;
+    height: 100vh;    
+`
 
+export const InputContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
 `

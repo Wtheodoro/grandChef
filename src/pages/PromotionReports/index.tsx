@@ -1,12 +1,15 @@
 import React from 'react';
-import { Container, LeftSide, CardsContainer, RightSide, Content } from './styles';
-import TextFieldComponent from '../../components/TextField';
+import { Container, LeftSide, CardsContainer, RightSide, Content, InputContainer } from './styles';
+import TextFieldComponent from '../../components/Inputs/TextField';
 import InfoValueCard from '../../components/InfoValueCard';
 import { AiOutlineRise } from "react-icons/ai";
 import { MdPeople } from "react-icons/md";
 import LineChartBox from '../../components/chartSet/chartBox/LineChartBox';
 import PieChartBox from '../../components/chartSet/chartBox/PieChartBox';
 import MainHeader from '../../components/MainHeader';
+import SelectInput from '../../components/Inputs/Select';
+import ProductShowcase from '../../components/ProductShowcase';
+import ServiceShowcase from '../../components/ServiceShowcase';
 
 const PromotionReports: React.FC = () => {
   return (
@@ -15,7 +18,7 @@ const PromotionReports: React.FC = () => {
 
       <Content>
         <LeftSide>
-          <TextFieldComponent />
+        <TextFieldComponent />         
 
           <CardsContainer>
             <InfoValueCard 
@@ -41,7 +44,14 @@ const PromotionReports: React.FC = () => {
           
         </LeftSide>
         <RightSide>
+          <InputContainer>
+            <SelectInput />
+            <SelectInput />
+          </InputContainer>
 
+          <ProductShowcase />
+          <ServiceShowcase />
+          
         </RightSide>
       </Content>
       
