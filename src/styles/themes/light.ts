@@ -3,8 +3,10 @@ const lightTheme = {
 
     color: {
         primary: '#FFF',
-        secondary: '#EF6C00',
-        tertiary: '#DCDCDC',
+        primaryShadow: '#C0C0C0',
+        secondary: '#FA8128',
+        secondaryShadow: '#F5CAA8',
+        tertiary: '#F7F7F7',
 
         font: '#666'
     }

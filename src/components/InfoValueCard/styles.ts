@@ -7,9 +7,15 @@ export const Container = styled.div<ContainerProps>`
     width: 48%;
     height: 10rem;
     border-radius: 5px;
+    margin: 1rem 0;
 
     color: ${props => props.contrast === true ? '#FFF' :props.theme.color.font};
-    background-color: ${props => props.contrast === true ? props.theme.color.secondary: '#FFF'};
+    background-color: ${props => props.contrast === true 
+    ? props.theme.color.secondary
+    : '#FFF'};
+    box-shadow: 3px 5px 3px ${props => props.contrast === true 
+    ? props.theme.color.secondaryShadow 
+    : props.theme.color.primaryShadow };
 
     display: flex;
     justify-content: flex-start;

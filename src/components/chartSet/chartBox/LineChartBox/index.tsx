@@ -1,5 +1,5 @@
 import React from 'react';
-import LineChart from '../charts/LineChart';
+import LineChart from '../../charts/LineChart';
 import { Container, Title, ChartContainer } from './styles';
 
 const LineChartBox: React.FC = () => {

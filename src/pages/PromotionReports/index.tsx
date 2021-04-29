@@ -1,42 +1,50 @@
 import React from 'react';
-import { Container, LeftSide, CardsContainer, RightSide } from './styles';
+import { Container, LeftSide, CardsContainer, RightSide, Content } from './styles';
 import TextFieldComponent from '../../components/TextField';
 import InfoValueCard from '../../components/InfoValueCard';
 import { AiOutlineRise } from "react-icons/ai";
 import { MdPeople } from "react-icons/md";
-import LineChartBox from '../../components/LineChartBox';
+import LineChartBox from '../../components/chartSet/chartBox/LineChartBox';
+import PieChartBox from '../../components/chartSet/chartBox/PieChartBox';
+import MainHeader from '../../components/MainHeader';
 
 const PromotionReports: React.FC = () => {
   return (
     <Container>
-      <LeftSide>
-        <TextFieldComponent />
+      <MainHeader>Relatório de Promoções</MainHeader>
 
-        <CardsContainer>
-          <InfoValueCard 
-            icon={<AiOutlineRise />} 
-            title="Faturamento"
-            value="300.00"
-            unit="R$"
-            valueConfig='prefix'
-            contrast={true}
-          />
+      <Content>
+        <LeftSide>
+          <TextFieldComponent />
 
-          <InfoValueCard 
-            icon={<MdPeople />} 
-            title="Participantes"
-            value="100"
-            unit="clientes"
-            valueConfig='sufix'
-          />
-        </CardsContainer>
+          <CardsContainer>
+            <InfoValueCard 
+              icon={<AiOutlineRise />} 
+              title="Faturamento"
+              value="300.00"
+              unit="R$"
+              valueConfig='prefix'
+              contrast={true}
+            />
 
-        <LineChartBox />
-        
-      </LeftSide>
-      <RightSide>
+            <InfoValueCard 
+              icon={<MdPeople />} 
+              title="Participantes"
+              value="100"
+              unit="clientes"
+              valueConfig='sufix'
+            />
+          </CardsContainer>
 
-      </RightSide>
+          <LineChartBox />
+          <PieChartBox />
+          
+        </LeftSide>
+        <RightSide>
+
+        </RightSide>
+      </Content>
+      
     </Container>
   )
 }
