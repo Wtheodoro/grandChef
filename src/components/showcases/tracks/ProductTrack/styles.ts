@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
     color: ${props => props.theme.color.font};
     font-size: 1.4rem;
+    margin-bottom: 2rem;
 `;
 
 export const Top = styled.div`
@@ -45,8 +46,6 @@ export const RightSide = styled.div`
     }
 
 `
-
-
 
 export const Bottom = styled.div`
     display: flex;

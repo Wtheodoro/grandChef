@@ -1,30 +1,47 @@
-import React from 'react';
-
+import React, { useState } from 'react';
 import { Container, LeftSide, RightSide, Top, Bottom } from './styles';
 
-const ProductTrack: React.FC = () => {
+interface IProductTrack {
+  name: string
+  amount: number
+  price: number
+  priceOff: number
+  points?: number
+  rescue?: number
+  image_url: string
+}
+
+const ProductTrack: React.FC<IProductTrack> = ({ 
+  amount, image_url, name, points, price, priceOff, rescue
+ }) => {
+
+  const [showBot, setShowBot] = useState<boolean>(true)
+
   return (
     <Container>
       <Top>
         <LeftSide>
           <div className="detail"/>
-          <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/03/Foto-X-Burguer-Hamburguer-Cheeseburguer-PNG-1024x853.png" alt="Xburger"/>
+          <img src={image_url} alt={`Imagem de um ${name}`}/>
           <div className="NameAmount">
-            <p className="product_name">X-burger</p>
-            <p>Quantidade: 55</p>
+            <p className="product_name">{name}</p>
+            <p>Quantidade: {amount}</p>
           </div>
         </LeftSide>
 
         <RightSide>
           <p>Preço / Promoção</p>
-          <p>R$ 3,50 / <span>R$ 2,99</span></p>
+          <p>R$ {price} / <span>R$ {priceOff}</span></p>
         </RightSide>
       </Top>
       
-      <Bottom>
-        <p>Pontos: <span>120 pts</span></p>
-        <p>Resgates: <span>33 pts</span></p>
-      </Bottom>
+      {
+        points &&
+        <Bottom>
+          <p>Pontos: <span>{points} pts</span></p>
+          <p>Resgates: <span>{rescue} pts</span></p>
+        </Bottom>
+      }
     </Container>
   )
 }
