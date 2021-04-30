@@ -6,7 +6,10 @@ import { FormControl, InputLabel } from '@material-ui/core';
 
 interface ISelectInputProps {
   type: string
-  options: string[]
+  options: {
+    key: string
+    value: string
+  }[]
 }
 
 const SelectInput: React.FC<ISelectInputProps> = ({ type, options }) => {
@@ -23,10 +26,16 @@ const SelectInput: React.FC<ISelectInputProps> = ({ type, options }) => {
           labelId="select-outlined-label"
           id="select-outlined"
           label="Type"
+          defaultValue=""
         >
           {
             options?.map((i) => (
-              <MenuItem value={i}>{strCamelCase(i)}</MenuItem>
+              <MenuItem 
+                value={i.value} 
+                key={i.key}
+              >
+                {strCamelCase(i.key)}
+              </MenuItem>
             ))
           }
         </Select>

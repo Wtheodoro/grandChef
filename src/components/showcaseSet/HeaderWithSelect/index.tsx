@@ -6,7 +6,10 @@ import { Container } from './styles';
 interface IHeaderProps {
   children: string
   selectType: string
-  selectOptions: string[]
+  selectOptions: {
+    key: string
+    value: string
+  }[]
 }
 
 const HeaderWithSelect: React.FC<IHeaderProps> = ({ children, selectType, selectOptions }) => {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, LeftSide, RightSide, Top, Bottom } from './styles';
 
 interface IProductTrack {
@@ -14,8 +14,6 @@ interface IProductTrack {
 const ProductTrack: React.FC<IProductTrack> = ({ 
   amount, image_url, name, points, price, priceOff, rescue
  }) => {
-
-  const [showBot, setShowBot] = useState<boolean>(true)
 
   return (
     <Container>

@@ -4,6 +4,12 @@ export const Container = styled.div`
     color: ${props => props.theme.color.font};
     font-size: 1.4rem;
     margin-bottom: 2rem;
+    transition: all ease .3s;
+
+    &:hover {
+        opacity: .7;
+        transform: translateX(0.6rem)
+    }
 `;
 
 export const Top = styled.div`
@@ -36,6 +42,7 @@ export const LeftSide = styled.div`
     .NameAmount .product_name {
         font-size: 2rem;
         color: #000;
+        font-weight: 600;
     }
 `
 

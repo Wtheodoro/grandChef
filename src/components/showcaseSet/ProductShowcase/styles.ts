@@ -8,5 +8,4 @@ export const Container = styled.div`
     border-radius: 5px;
     background-color: ${props => props.theme.color.primary};
     box-shadow: 3px 5px 3px ${props => props.theme.color.primaryShadow };
-
 `;

@@ -5,8 +5,14 @@ import Products from '../../../assets/db/products'
 import { Container } from './styles';
 
 const ProductShowcase: React.FC = () => {
-
-  const options = ["Mais vendidos", "Mais avaliados", "Maior preço", "Menor preço", "Promoções"]
+ 
+  const options = [
+    {key: "Mais vendidos", value: "mostSold"},
+    {key: "Mais avaliados", value: "mostRated"},
+    {key: "Maior preço", value: "biggestPrice"},
+    {key: "Menor preço", value: "lowestPrice"},
+    {key: "Promoções", value: "promotions"}
+  ]
 
   return (
     <Container>
@@ -15,7 +21,8 @@ const ProductShowcase: React.FC = () => {
       </HeaderWithSelect>
       {
         Products.map(i => (
-          <ProductTrack 
+          <ProductTrack
+            key={i.name}
             name={i.name}
             amount={i.amount}
             price={i.price}

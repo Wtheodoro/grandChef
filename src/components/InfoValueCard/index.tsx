@@ -1,6 +1,4 @@
 import React from 'react';
-import { AiOutlineRise } from "react-icons/ai";
-import { MdPeople } from "react-icons/md";
 import { Container } from './styles';
 
 interface InfoValueCardProps {
