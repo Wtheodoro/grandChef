@@ -8,8 +8,8 @@ import LineChartBox from '../../components/chartSet/chartBox/LineChartBox';
 import PieChartBox from '../../components/chartSet/chartBox/PieChartBox';
 import MainHeader from '../../components/MainHeader';
 import SelectInput from '../../components/Inputs/Select';
-import ProductShowcase from '../../components/ProductShowcase';
-import ServiceShowcase from '../../components/ServiceShowcase';
+import ProductShowcase from '../../components/showcases/ProductShowcase';
+import ServiceShowcase from '../../components/showcases/ServiceShowcase';
 
 const PromotionReports: React.FC = () => {
   return (
@@ -45,8 +45,8 @@ const PromotionReports: React.FC = () => {
         </LeftSide>
         <RightSide>
           <InputContainer>
-            <SelectInput />
-            <SelectInput />
+            <SelectInput type="Tipo" options={['porcentagem', 'quantidade']}/>
+            <SelectInput type="Tipo" options={['porcentagem', 'quantidade']}/>
           </InputContainer>
 
           <ProductShowcase />
