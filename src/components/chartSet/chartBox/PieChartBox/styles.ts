@@ -6,7 +6,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+    margin: 2rem 0;
     border-radius: 5px;
     box-shadow: 3px 5px 3px ${props => props.theme.color.primaryShadow };
 `;

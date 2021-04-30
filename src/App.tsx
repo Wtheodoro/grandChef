@@ -1,14 +1,16 @@
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
+import { useTheme } from './hooks/themeContext';
 import Routes from './routes'
 import GlobalStyles from "./styles/GlobalStyles";
 
-import lightTheme from './styles/themes/light'
-
 function App() {
+
+  const { theme } = useTheme()
+  
   return (
     <BrowserRouter>
-      <ThemeProvider theme={lightTheme}>
+      <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Routes />
       </ThemeProvider>

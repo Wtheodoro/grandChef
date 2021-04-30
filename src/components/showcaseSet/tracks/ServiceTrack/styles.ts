@@ -4,7 +4,7 @@ export const Container = styled.div`
     padding: 1rem;
     border-radius: 5px;
     border: 1px solid;
-    border-color: ${props => props.theme.color.font};
+    border-color: ${props => props.theme.color.borderColor};
 
     transition: all ease .3s;
 
@@ -19,7 +19,10 @@ export const Container = styled.div`
     }
 
     .service_name {
-        color: #000;
         font-weight: 600;
+        color: ${props => props.theme.title === 'light' 
+        ? '#000' 
+        : props.theme.color.font
+        };
     }
 `;  

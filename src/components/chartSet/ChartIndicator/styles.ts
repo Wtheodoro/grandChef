@@ -21,9 +21,9 @@ export const Dot = styled.div<IDotProps>`
 `
 
 export const Description = styled.p`
-
+    color: ${props => props.theme.title === 'light' ? '#000' :props.theme.color.font};
 `
 
 export const Value = styled.span`
-
+    color: ${props => props.theme.color.font};
 `

@@ -29,7 +29,6 @@ const animateRight = keyframes`
 `
 
 export const Container = styled.div`
-    height: 100%;
     font-size: 2.2rem;
 
     background-color: ${props => props.theme.color.tertiary};

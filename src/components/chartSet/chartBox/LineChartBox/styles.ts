@@ -5,7 +5,7 @@ export const Container = styled.div`
     margin: 1rem 0;
     padding: 2rem;
     border-radius: 5px;
-    box-shadow: 3px 5px 3px ${props => props.theme.color.primaryShadow };
+    box-shadow: 3px 5px 3px ${props => props.theme.color.primaryShadow};
 `;
 
 export const Title = styled.h2`

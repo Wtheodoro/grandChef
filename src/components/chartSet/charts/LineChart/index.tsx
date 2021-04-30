@@ -2,8 +2,10 @@ import React from 'react';
 import { Line } from 'react-chartjs-2'
 import { ChartData, ChartOptions } from 'chart.js'
 import { Container } from './styles'
+import { useTheme } from '../../../../hooks/themeContext';
 
 const LineChart: React.FC = () => {
+  const { theme } = useTheme()
   const dataLabels = ['abr 3', 'abr 4', 'abr 5', 'abr 6', 'abr 7', 'abr 8', 'abr 9']
   const dataValues = [100, 200, 160, 200, 300, 200, 400]
 
@@ -14,8 +16,8 @@ const LineChart: React.FC = () => {
         label: 'Faturamento em R$',
         data: dataValues,
         fill: false,
-        backgroundColor: '#EF6C00',
-        borderColor: '#EF6C00',
+        backgroundColor: theme.color.secondary,
+        borderColor: theme.color.secondary,
       },
     ],
   };

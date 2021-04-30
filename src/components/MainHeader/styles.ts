@@ -6,18 +6,26 @@ export const Container = styled.div`
     padding: 0 3rem;
     color: ${props => props.theme.color.font};
     background-color: ${props => props.theme.color.primary};
-    box-shadow: 1px 3px 1px ${props => props.theme.color.primaryShadow };
+    box-shadow: 1px 3px 1px ${props => props.theme.title === 'light' 
+    ? props.theme.color.primaryShadow
+    : 'none'
+    };
 
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    > h1 {
-        font-size: 2.6rem;
-        margin-left: 3rem;
-    }
+    > div {
+        display: flex;
+        align-items: center;
 
-    > svg {
-        font-size: 4rem;
-    }
+        h1 {
+            font-size: 2.6rem;
+            margin-left: 3rem;
+        };
 
+        svg {
+            font-size: 4rem;
+        };
+    }
 `;

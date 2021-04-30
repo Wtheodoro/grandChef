@@ -10,8 +10,11 @@ declare module 'styled-components' {
             secondary: string
             secondaryShadow: string
             tertiary: string
-    
+            borderColor: string
             font: string
+            sectionA: string
+            sectionB: string
+            sectionC: string
         }
     }
 }

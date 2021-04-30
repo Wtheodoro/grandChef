@@ -17,7 +17,7 @@ export const Top = styled.div`
     justify-content: space-between;
     align-items: center;
     border: 1px solid;
-    border-color: ${props => props.theme.color.font};
+    border-color: ${props => props.theme.color.borderColor};
     border-radius: 5px 5px 0 0;
 `
 
@@ -41,7 +41,10 @@ export const LeftSide = styled.div`
 
     .NameAmount .product_name {
         font-size: 2rem;
-        color: #000;
+        color: ${props => props.theme.title === 'light' 
+        ? '#000' 
+        : props.theme.color.font
+        };
         font-weight: 600;
     }
 `
@@ -60,7 +63,7 @@ export const Bottom = styled.div`
     align-items: center;
     border: 1px solid;
     border-top: none;
-    border-color: ${props => props.theme.color.font};
+    border-color: ${props => props.theme.color.borderColor};
     border-radius: 0 0px 5px 5px;
 
     p {

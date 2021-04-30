@@ -12,7 +12,7 @@ export const Container = styled.div<ContainerProps>`
     color: ${props => props.contrast === true ? '#FFF' :props.theme.color.font};
     background-color: ${props => props.contrast === true 
     ? props.theme.color.secondary
-    : '#FFF'};
+    : props.theme.color.primary};
     box-shadow: 3px 5px 3px ${props => props.contrast === true 
     ? props.theme.color.secondaryShadow 
     : props.theme.color.primaryShadow };

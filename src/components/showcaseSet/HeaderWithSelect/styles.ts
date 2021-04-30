@@ -8,5 +8,6 @@ export const Container = styled.div`
 
     > h2 {
         font-size: 2.2rem;
+        color: ${props => props.theme.color.font};
     }
 `;
