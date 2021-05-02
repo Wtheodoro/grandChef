@@ -19,7 +19,7 @@ const PieChart: React.FC = () => {
     } else {
       setRadius(80)
     }
-  }, [window.innerWidth])
+  }, [])
 
   const data: ChartData = {
     labels: ['Taxa de entrega grátis', 'Promoção de Segunda-feira', 'Promoção de Terça-feira'],
