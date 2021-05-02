@@ -11,6 +11,8 @@ The application was also created with responsiveness in mind.(space, space)
 - theme provider
 - chartJS (react-chartjs-2)
 
+**If you need to dynamically decrease the screen size, a browser refresh will be necessary so the pie chart radius natches the new screen size**
+
 ## `Step by step to run this project`
 
 ### `clone`
