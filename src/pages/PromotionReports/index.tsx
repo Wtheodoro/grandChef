@@ -10,6 +10,7 @@ import MainHeader from '../../components/MainHeader';
 import SelectInput from '../../components/Inputs/Select';
 import ProductShowcase from '../../components/showcaseSet/ProductShowcase';
 import ServiceShowcase from '../../components/showcaseSet/ServiceShowcase';
+import DateInput from '../../components/Inputs/DateInput';
 
 const PromotionReports: React.FC = () => {
   return (
@@ -52,13 +53,8 @@ const PromotionReports: React.FC = () => {
                 {key: 'quantidade', value: 'amount'}
               ]}
             />
-            <SelectInput 
-              type="Tipo" 
-              options={[
-                {key: 'porcentagem', value: 'percentage'},
-                {key: 'quantidade', value: 'amount'}
-              ]}
-            />
+
+            <DateInput />
           </InputContainer>
 
           <ProductShowcase />

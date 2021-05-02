@@ -14,6 +14,8 @@ interface ISelectInputProps {
 
 const SelectInput: React.FC<ISelectInputProps> = ({ type, options }) => {
 
+
+
   const strCamelCase = (str: string) => {
     return str.toLocaleUpperCase()
   }
@@ -21,7 +23,9 @@ const SelectInput: React.FC<ISelectInputProps> = ({ type, options }) => {
   return (
     <Container>
       <FormControl variant="outlined" fullWidth={true}>
-        <InputLabel id="demo-simple-select-outlined-label">{type}</InputLabel>
+        <InputLabel id="demo-simple-select-outlined-label"
+          
+        >{type}</InputLabel>
         <Select
           labelId="select-outlined-label"
           id="select-outlined"

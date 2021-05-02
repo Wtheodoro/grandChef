@@ -10,6 +10,10 @@ export const Container = styled.div`
         opacity: .7;
         transform: translateX(0.6rem)
     }
+
+    @media(max-width: 1080px) {
+        margin-bottom: 1rem;
+    }
 `;
 
 export const Top = styled.div`
@@ -31,6 +35,10 @@ export const LeftSide = styled.div`
 
     > img {
         width:  10rem;
+
+        @media(max-width: 1080px) {
+            width: 8rem;
+        }
     }
 
     .NameAmount {
@@ -46,6 +54,14 @@ export const LeftSide = styled.div`
         : props.theme.color.font
         };
         font-weight: 600;
+
+        @media(max-width: 1080px) {
+            font-size: 1.8rem;
+        }
+
+        @media(max-width: 720px) {
+            font-size: 1.6rem;
+        }
     }
 `
 
@@ -55,6 +71,13 @@ export const RightSide = styled.div`
         color: green;
     }
 
+    @media(max-width: 1080px) {
+        margin-right: 1rem;
+    }
+
+    @media(max-width: 720px) {
+        margin-right: .8rem;
+    }
 `
 
 export const Bottom = styled.div`

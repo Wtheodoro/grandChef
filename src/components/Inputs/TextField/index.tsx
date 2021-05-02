@@ -14,6 +14,7 @@ const TextFieldComponent: React.FC = () => (
         startAdornment: <InputAdornment position="start"><AiOutlineSearch/></InputAdornment>,
       }}
       fullWidth={true}
+      
     />
   </Container>
 )

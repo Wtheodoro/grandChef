@@ -24,7 +24,6 @@ const LineChart: React.FC = () => {
 
   const options: ChartOptions = {
     responsive: true,
-
     plugins: {
       legend: {
         display: false,

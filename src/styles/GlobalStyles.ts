@@ -20,6 +20,24 @@ const GlobalStyles = createGlobalStyle`
         border: 0;
         outline: 0;
     }
+
+    @media(max-width: 1080px) {
+        html {
+            font-size: 58.5%;
+        }
+    }
+
+    @media(max-width: 770px) {
+        html {
+            font-size: 54.5%;
+        }
+    }
+
+    @media(max-width: 420px) {
+        html {
+            font-size: 50%;
+        }
+    }
 `
 
 export default GlobalStyles

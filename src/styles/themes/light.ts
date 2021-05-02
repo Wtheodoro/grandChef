@@ -9,6 +9,7 @@ const lightTheme = {
         tertiary: '#F7F7F7',
         borderColor: '#000',
         font: '#666',
+        title: '#000',
 
         // pie chart sections
         sectionA: '#F28A33',

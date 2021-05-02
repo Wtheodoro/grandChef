@@ -33,4 +33,33 @@ export const Container = styled.div<ContainerProps>`
     > div h3 {
         font-size: 1.2rem;
     }
+
+    @media(max-width: 1080px) {
+        height: 9rem;
+
+        > svg, > div {
+            margin-left: 2rem;
+        }
+    }
+
+    @media(max-width: 720px) {
+        height: 8rem;
+
+        > svg, > div {
+            margin-left: 1.8rem;
+        }
+    }
+
+    @media(max-width: 420px) {
+        height: 7rem;
+
+        > svg, > div {
+            margin-left: 1rem;
+        }
+    }
+
+    @media(max-width: 360px) {
+        width: 100%;
+        justify-content: space-around;
+    }
 `;

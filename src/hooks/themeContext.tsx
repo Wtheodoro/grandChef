@@ -13,6 +13,7 @@ interface ITheme {
     tertiary: string
     borderColor: string
     font: string
+    title: string
     sectionA: string
     sectionB: string
     sectionC: string

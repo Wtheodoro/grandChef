@@ -9,11 +9,12 @@ const darkTheme = {
         tertiary: '#090C10',
         borderColor: '#30363D',
         font: '#AFB5BB',
+        title: '#FFF',
 
         // pie chart sections
-        sectionA: '#1D6FCA',
-        sectionB: '#8F4100',
-        sectionC: '#EF6C00',
+        sectionA: '#00BFFF',
+        sectionB: '#4682B4',
+        sectionC: '#1D6FCA',
     }
 }
 
