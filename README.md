@@ -5,7 +5,11 @@
 The application was also created with responsiveness in mind.(space, space)
 ![GIFmobile](https://github.com/Wtheodoro/grandChef/blob/main/public/gif/mobile.gif)
 
-**This is for study end practice** Some matters was practiced with this project, responsiveness, context-API and theme provider
+**This is for study end practice** Some matters was practiced with this project:
+- responsiveness
+- context-API
+- theme provider
+- chartJS (react-chartjs-2)
 
 ## `Step by step to run this project`
 
